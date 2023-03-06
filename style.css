@@ -1,0 +1,134 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  font-family: 'Caveat', cursive;
+}
+
+canvas {
+  position: absolute;
+  z-index: 5;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  image-rendering: optimizeSpeed;             /* Legal fallback */
+  image-rendering: -moz-crisp-edges;          /* Firefox        */
+  image-rendering: -o-crisp-edges;            /* Opera          */
+  image-rendering: -webkit-optimize-contrast; /* Safari         */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed  */
+  image-rendering: crisp-edges;               /* CSS4 Proposed  */
+  image-rendering: -o-pixelated;
+  image-rendering: pixelated;                 /* CSS4 Proposed  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+           */
+}
+
+.overlay {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  position: relative;
+  width: 50%;
+  height: -webkit-fill-available;
+  z-index: 100;
+  background-image: url(/paper.png);
+  background-repeat: no-repeat;
+  background-position: center 230px;
+}
+
+.flip-2-hor-bottom-bck {
+	-webkit-animation: flip-2-hor-bottom-bck 1s ease-in both;
+	        animation: flip-2-hor-bottom-bck 1s ease-in both;
+}
+
+ @-webkit-keyframes flip-2-hor-bottom-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    display: none;
+  }
+}
+
+ @keyframes flip-2-hor-bottom-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    display: none;
+  }
+}
+
+
+.title {
+  color: white;
+  font-size: 45px;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 105px;
+  text-transform: uppercase;
+}
+
+.input {
+  min-height: 50px;
+  width: 400px;
+
+  background-color: transparent;
+  border: none;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 24px;
+}
+
+.btn {
+  min-height: 50px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid tomato;
+}
+
+canvas {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
