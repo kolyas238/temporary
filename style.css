@@ -100,7 +100,7 @@ canvas {
 
 .title {
   color: white;
-  font-size: 45px;
+  font-size: 24px;
   margin: 0 auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -128,7 +128,7 @@ canvas {
   border: 1px solid tomato;
 }
 
-canvas {
+/* canvas {
   -webkit-filter: blur(3px);
           filter: blur(3px);
-}
+} */

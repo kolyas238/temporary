@@ -2,7 +2,7 @@
 
 const canvas = document.querySelector("canvas"),
   ctx = canvas.getContext('2d', { lowLatency: true, alpha: false }),
-  scale = 5, // Size of pixels
+  scale = 4, // Size of pixels
   intensity = 1000; // Heat of the flame
   let cooling = 0.40; // Height of the flame
 
