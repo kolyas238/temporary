@@ -4,6 +4,13 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 @font-face {
   font-family: "Gogol";
   src: url("gogol_regular.woff2") format("woff2"), url("gogol_regular.woff") format("woff");
