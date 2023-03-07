@@ -78,7 +78,7 @@ loop(); // Start the loop.
 
 document.querySelector('.btn').addEventListener('click', () => {
   console.log('click');
-  let audio = new Audio('/untitled.ogg');
+  let audio = new Audio('untitled.ogg');
   audio.play();
   audio.loop = true;
 
