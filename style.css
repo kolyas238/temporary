@@ -124,19 +124,19 @@ canvas {
 }
 
 .input {
-  min-height: 494px;
   width: 100%;
   padding: 30px;
   background-image: url("paper.png");
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   color: black;
   font-size: 24px;
   outline: none;
   border: none;
+  text-align: center;
   font-family: 'Gogol';
 }
 
@@ -144,10 +144,34 @@ canvas {
   min-height: 50px;
   background-color: transparent;
   color: white;
-  border: 1px solid tomato;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
 }
 
-/* canvas {
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
-} */
+canvas {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 500px) {
+  .overlay {
+    width: 500px;
+  }
+
+  .input {
+    min-height: 500px;
+  }
+}
+

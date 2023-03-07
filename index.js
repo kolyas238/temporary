@@ -78,13 +78,13 @@ loop(); // Start the loop.
 
 document.querySelector('.btn').addEventListener('click', () => {
   console.log('click');
-  let audio = new Audio('untitled.ogg');
-audio.play();
-audio.loop = true;
+  let audio = new Audio('/untitled.ogg');
+  audio.play();
+  audio.loop = true;
 
-cooling = 0.49;
+  cooling = 0.49;
 
   document.querySelector('.overlay').classList.add('flip-2-hor-bottom-bck');
+  document.querySelector('.overlay-2').classList.remove('hide');
+  document.querySelector('.overlay-2').classList.add('show');
 })
-
-
