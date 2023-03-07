@@ -53,7 +53,7 @@ canvas {
 
 .overlay {
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,7 +165,7 @@ canvas {
   height: 100%;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .overlay {
     width: 500px;
   }
